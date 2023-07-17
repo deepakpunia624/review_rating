@@ -8,7 +8,8 @@ const userSchema =  new mongoose.Schema({
     userEmail:{type:String,require:true},
     userCity:{type:String,require:true},
     userState:{type:String,require:true},
-    userRoll:{type:String,default:"user"},
+    userRole:{type:String,require:true},
+    profilePic:{type:String},
     isActive:{type:String,default:true},
 
 })
