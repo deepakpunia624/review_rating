@@ -1,5 +1,5 @@
-const userValSchema =require("./userValSchema")
-const {unlinkSync} =require("fs");
+const userValSchema = require("./userValSchema")
+const {unlinkSync} = require("fs");
 
 module.exports = {
     registerUserValidation: async(req,res,next)=>{

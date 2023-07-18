@@ -1,12 +1,12 @@
 let express = require('express')
 
-let Review = require('../controller/companyReviewController')
+let review = require('../controller/companyReviewController')
 let {registerReviewValidation} = require('../validations/companyReview/companyReviewDataValidation')
 
 let companyReviewRouter = express.Router()
 
-companyReviewRouter.post('/create',registerReviewValidation,Review.createReview)
-companyReviewRouter.patch('/update/:id',Review.updateReview)
-companyReviewRouter.delete('/delete/:id',Review.deleteReview)
+companyReviewRouter.post('/create',registerReviewValidation,review.createReview)
+companyReviewRouter.patch('/update/:id',review.updateReview)
+companyReviewRouter.delete('/delete/:id',review.deleteReview)
 
 module.exports = companyReviewRouter
